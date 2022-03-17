@@ -35,6 +35,7 @@ export class Service {
     const { name, type } = await this.getFileInfo(filename);
     return {
       stream: this.createFileStream(name),
+      type
     }
   }
 }
